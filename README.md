@@ -13,27 +13,24 @@ Simply use the Model Router instead of using OpenAI directly. And, no need to sp
 import openai
 openai.api_key = "sk-..."
 
-# create a chat completion
 chat_completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": "Hello world"}]
 )
 
-# print the chat completion
 print(chat_completion.choices[0].message.content)
 ```
 
 #### After
 ```python
-from model_router import openai
+from model_router import openai # import from model_router instead
 openai.api_key = "sk-..."
 
-# create a chat completion
 chat_completion = openai.ChatCompletion.create(
+    # skip the model
     messages=[{"role": "user", "content": "Hello world"}]
 )
 
-# print the chat completion
 print(chat_completion.choices[0].message.content)
 ```
 
@@ -44,7 +41,6 @@ print(chat_completion.choices[0].message.content)
 import openai
 openai.api_key = "sk-..."
 
-# create a chat completion
 chat_completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo-0613",
     messages=[{"role": "user", "content": "What's the weather like in Boston?"}],
@@ -52,23 +48,21 @@ chat_completion = openai.ChatCompletion.create(
     function_call="auto",
 )
 
-# print the chat completion
 print(chat_completion.choices[0].message.content)
 ```
 
 #### After
 ```python
-from model_router import openai
+from model_router import openai # import from model_router instead
 openai.api_key = "sk-..."
 
-# create a chat completion
 chat_completion = openai.ChatCompletion.create(
+    # skip the model
     messages=[{"role": "user", "content": "What's the weather like in Boston?"}],
     functions=[...],
     function_call="auto",
 )
 
-# print the chat completion
 print(chat_completion.choices[0].message.content)
 ```
 
