@@ -1,6 +1,9 @@
-# Model Router
+# OpenAI Model Router
 
 Given the number of OpenAI models, it can get tricky to identify which model to call for a given prompt. So we built the Model Router, to dynamically select the *most appropriate model* for our prompt.
+
+List of supported models: `gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613`
+Support for more models coming soon ;)
 
 ## Usage
 
