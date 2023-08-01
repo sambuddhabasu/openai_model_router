@@ -5,6 +5,11 @@ Given the number of OpenAI models, it can get tricky to identify which model to 
 List of supported models: `gpt-3.5-turbo, gpt-3.5-turbo-0613, gpt-3.5-turbo-16k, gpt-3.5-turbo-16k-0613`
 Support for more models coming soon ;)
 
+## Installation
+```python
+pip install openai-model-router
+```
+
 ## Usage
 
 Simply use the Model Router instead of using OpenAI directly. And, no need to specify the model anymore!
